@@ -31,93 +31,48 @@ printAverageScores();
 
 
 //2
-function printWinner() {
+function printWinner () {
     // console.log(
     //     johnAverageScore === mikeAverageScore ? "John and Mike's team both have the same average score with: " + johnAverageScore :
     //     johnAverageScore > mikeAverageScore ? 
     //     "John's team has higher average score with: " + johnAverageScore : 
     //     "Mike's team has higher average score with: " + mikeAverageScore
     // ); 
+    
 
     //4 
-
-        
-
-        
-        // console.log("John and Mike's team both have the same average score with: " + johnAverageScore);    
-
-
-    if (johnAverageScore > mikeAverageScore) {
-        if (johnAverageScore > maryAverageScore) {
-            console.log("John's team has higher average score with: " + johnAverageScore);
-        }
+    if (johnAverageScore > mikeAverageScore && johnAverageScore > maryAverageScore) {
+        console.log("John's team has higher average score with: " + johnAverageScore);
     }
-    else if (mikeAverageScore > johnAverageScore) {
-        if (mikeAverageScore > maryAverageScore) {
-            console.log("Mike's team has higher average score with: " + mikeAverageScore);
-        }
+    else if (mikeAverageScore > johnAverageScore && mikeAverageScore > maryAverageScore) {
+        console.log("Mike's team has higher average score with: " + mikeAverageScore);
     }
-    else if (maryAverageScore > johnAverageScore) {
-        if (maryAverageScore > mikeAverageScore) {
-            console.log("Mary's team has higher average score with: " + maryAverageScore);
-        }
+    else if (maryAverageScore > johnAverageScore && maryAverageScore > mikeAverageScore) {
+        console.log("Mary's team has higher average score with: " + maryAverageScore);
     }
     else if (johnAverageScore === mikeAverageScore && johnAverageScore === maryAverageScore) {
-        console.log("all tied");
+        console.log("All teams are tied for the highest average score: " + johnAverageScore);
     }
     else if (johnAverageScore === mikeAverageScore) {
-
+        console.log("John and Mike's team are tied for the highest average score: " + johnAverageScore);
     }
     else if (johnAverageScore === maryAverageScore) {
-
+        console.log("John and Mary's team are tied for the highest average score: " + johnAverageScore);
     }
     else if (mikeAverageScore === maryAverageScore) {
-
+        console.log("Mike and Mary's team are tied for the highest average score: " + johnAverageScore);
     }
-
-        
-
-
-            // if (johnAverageScore >= mikeAverageScore && johnAverageScore >= maryAverageScore) {
-            //     //John and Mike
-            //     if (johnAverageScore === mikeAverageScore) {
-            //         //John, Mike and Mary
-            //         if (johnAverageScore === maryAverageScore) {
-            //             console.log("All tied");
-            //         }
-            //         else (
-            //             console.log("John and Mike are tied")
-            //         )
-            //     }
-            //     //John and Mary
-            //     else if (johnAverageScore === maryAverageScore) {
-            //         console.log("John and Mary are tied");
-            //     }
-            //     //John is higher
-            //     else {
-            //         console.log("John's team has higher average score with: " + johnAverageScore);
-            //     }
-            // }
-            // else if (mikeAverageScore >= johnAverageScore && mikeAverageScore >= maryAverageScore) {
-            //     if (mikeAverageScore === ) {
-
-            //     }
-
-            //     // console.log("Mike's team has higher average score with: " + mikeAverageScore);
-            // }
-            // else {
-
-
-            //     // console.log("Mary's team has higher average score with: " + maryAverageScore);
-            // }
-
+    else {
+        console.log("Something went wrong..");
+    }
 }
+
 
 printWinner();
 
 
 //3
-johnLatestScores = [112, 112, 112];
+johnLatestScores = [100, 100, 100];
 printAverageScores();
 printWinner();
 
@@ -126,3 +81,6 @@ printWinner();
 
 
 //5
+maryLatestScores = [99, 99, 99];
+printAverageScores();
+printWinner();
